@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator{
+    box-shadow: 0 1px 4px 0 #999;
+    padding: 30px;
+}
+
+#input {
+    font-size: 3rem;
+    width: 100%;
+    height: 79px;
+    padding: 10px 10px 10px 0;
+    margin: 10px 0 10px 0;
+    border: 1px solid #c5c5c5;
+    display: flex;
+    justify-content: flex-end;
+    overflow-x: hidden;
+}
+
+.numbers{
+    display: flex;
+}
+
+.numbers div, .equal, .operators div{
+    font-size: 3rem;
+    width: 80px;
+    padding: 5px 60px;
+    border: 1px solid #c5c5c5;
+    background-color: #f3f2f2;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.operators{
+    display: flex;
+    flex-direction: row;
+}
+
+.number_panel{
+    float: left;
+}
+
+.equal{
+    float: right;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    background-color: #4ec36b;
+}
+
+.operators div:nth-child(4), .equal{
+    margin-right: 0;
+}
+
+.operators div:nth-child(1), .numbers div:nth-child(1){
+    margin-left: 0;
+}
+
+.operators div:hover, .numbers div:hover{
+    background-color: #dbdbdb;
+    transition: all 100ms ease-in;
+}
+
+.equal:hover{
+    background-color: #43b660;
+    transition: all 100ms ease-in;
+}
+
+
+
